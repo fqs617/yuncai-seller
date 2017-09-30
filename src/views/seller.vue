@@ -2,7 +2,7 @@
   <div class="main">
     <side-bar></side-bar>
     <div class="wrapper">
-      <!-- <top-bar></top-bar> -->
+      <top-bar></top-bar>
       <div id="content">
         <!-- <crumbs></crumbs> -->
         <transition name="fade" mode="out-in">
@@ -14,7 +14,7 @@
 </template>
 <script>
 import sidebar from './layout/sidebar'
-// import topbar from './layout/topbar'
+import topbar from './layout/topbar'
 // import crumbs from './layout/crumbs'
 export default {
   data: function () {
@@ -28,9 +28,8 @@ export default {
   },
   methods: {},
   components: {
-    'side-bar': sidebar
-    // 'top-bar': topbar,
-    // 'crumbs': crumbs,
+    'side-bar': sidebar,
+    'top-bar': topbar
   },
   watch: {
     '$route' (to, from) {

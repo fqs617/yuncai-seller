@@ -1,0 +1,146 @@
+@import '../style/variables.less';
+@charset "utf-8";
+body {
+	font-size: 14px;
+	color: @color;
+}
+body,
+html {
+	height: 100%;
+	width: 100%;
+	color: @color;
+	// font-family: "Microsoft YaHei";
+	// font-family: "Hiragino Sans GB";
+	// font-family: element-icons!important;
+	font-family: "PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Helvetica,"微软雅黑",Arial,sans-serif;
+	// font-family: 'PingFangSC-Regular','-apple-system', 'Yuanti SC', HelveticaNeue-Light, 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, "Microsoft Yahei", Helvetica, Arial, sans-serif;
+}
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	vertical-align: baseline;
+	background: transparent;
+	-webkit-overflow-scrolling: touch;
+}
+*::-webkit-scrollbar {
+	display: none;
+}
+// input[placeholder], [placeholder], *[placeholder] {
+// 	color:red !important;
+// }
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #c4c4c4;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #c4c4c4;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #c4c4c4;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #c4c4c4;
+}
+
+body,
+html {
+	overflow: hidden;
+	// -webkit-appearance: none;
+	// -webkit-user-select: none;
+	// -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	// -webkit-tap-highlight-color: transparent;
+}
+.overflow-s {
+  overflow: scroll !important;
+	height: auto;
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+input,
+li,
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
+b,
+strong {
+	font-weight: normal;
+}
+img {
+	-webkit-touch-callout: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-tap-highlight-color: transparent;
+	display: block;
+	max-width: 100%;
+}
+li,
+ul {
+	list-style: none;
+}
+a,
+a:hover {
+	text-decoration: none!important;
+}
+a{
+	cursor:pointer;
+	color: inherit;
+}
+.click{
+	cursor:pointer;
+}
+.my-color{
+	color: @blue;
+}
+h1,h2,h3,h4,h5,h6,i,td,th{
+	font-style: normal;
+	font-weight: normal;
+}
+table{
+  border-collapse:collapse;
+	border-spacing:0;
+}
+app {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-left: @sidebar-w;
+	position: relative;
+}
+.wrapper {
+	width: 100%;
+	padding-top: @top-h;
+	position: relative;
+	// height: 100%;
+	min-width: 700px;
+	overflow-x: auto;
+  margin-left: 80px;
+  background: pink;
+}
+#app {
+  width: 100%;
+  height: 100%;
+}
+.half {
+	width: 50%;
+	float: left;
+}
+.clearfix ,.clear{
+	clear: both;
+}
+.fl-left {
+	float: left;
+}
+.fl-right {
+	float: right;
+}
